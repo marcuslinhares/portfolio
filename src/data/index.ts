@@ -31,7 +31,7 @@ export const personalData = {
   location: "Russas, Ceará, Brasil",
   github: "https://github.com/marcuslinhares",
   linkedin: "https://linkedin.com/in/marcus-linhares",
-  resumeUrl: "https://github.com/marcuslinhares/portfolio/raw/main/out/curriculo.pdf",
+  resumeUrl: "/curriculo.pdf",
 };
 
 export const skills: Skill[] = [
