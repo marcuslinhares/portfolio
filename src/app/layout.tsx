@@ -14,6 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://marcuslinhares.com"),
   title: "Marcus Linhares | Full Stack Engineer & Applied AI Engineer",
   description:
     "Portfólio de Marcus Linhares — Full Stack Engineer especializado em Spring Boot, Nest.js, React, Angular, Flutter e agentes de IA integrados à API do WhatsApp. Graduando em Ciência da Computação pela UFC.",
@@ -38,6 +39,21 @@ export const metadata: Metadata = {
       "Full Stack Engineer especializado em Spring Boot, React, Angular e agentes de IA. Graduando em Ciência da Computação pela UFC.",
     type: "website",
     locale: "pt_BR",
+    images: ["/icon-512.png"],
+  },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/icon-16.png", sizes: "16x16", type: "image/png" },
+      { url: "/icon-32.png", sizes: "32x32", type: "image/png" },
+      { url: "/icon-48.png", sizes: "48x48", type: "image/png" },
+      { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/icon-512.png", sizes: "512x512", type: "image/png" },
+    ],
+    apple: [
+      { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
+    ],
   },
 };
 
