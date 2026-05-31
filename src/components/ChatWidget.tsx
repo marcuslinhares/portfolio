@@ -2,6 +2,8 @@
 
 import { useState, useRef, useEffect } from "react";
 import { FiMessageSquare, FiX, FiSend, FiUser, FiCpu } from "react-icons/fi";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 
 type Message = {
   role: "user" | "assistant";
@@ -101,7 +103,15 @@ export default function ChatWidget() {
                       {msg.role === "user" ? "Você" : "IA"}
                     </span>
                   </div>
-                  {msg.content}
+                  {msg.role === "assistant" ? (
+                    <div className="markdown-content text-sm leading-relaxed">
+                      <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                        {msg.content}
+                      </ReactMarkdown>
+                    </div>
+                  ) : (
+                    msg.content
+                  )}
                 </div>
               </div>
             ))}
