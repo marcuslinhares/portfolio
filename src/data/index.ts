@@ -23,15 +23,15 @@ export interface Skill {
 
 export const personalData = {
   name: "Marcus Linhares",
-  title: "Full Stack Developer",
+  title: "Full Stack Engineer | Applied AI Engineer",
   headline:
-    "Spring Boot · Nest.js · React · Angular · Flutter · AI Agents",
+    "Spring Boot · Nest.js · React · Angular · Flutter · AI Agents · LangChain",
   email: "marcusviniciuslinhares543@gmail.com",
   phone: "(88) 99284-7861",
   location: "Russas, Ceará, Brasil",
   github: "https://github.com/marcuslinhares",
   linkedin: "https://linkedin.com/in/marcus-linhares",
-  resumeUrl: "#",
+  resumeUrl: "https://github.com/marcuslinhares/portfolio/raw/main/out/curriculo.pdf",
 };
 
 export const skills: Skill[] = [
@@ -64,6 +64,26 @@ export const skills: Skill[] = [
 
 export const projects: Project[] = [
   {
+    title: "Game Key SaaS",
+    description:
+      "Marketplace completo para compra e venda de chaves de jogos. Pagamentos reais com Stripe/Mercado Pago, criptografia AES-256 para chaves, sistema de escrow e CI/CD automatizado.",
+    techs: [
+      "Next.js",
+      "TypeScript",
+      "Supabase",
+      "Stripe",
+      "Mercado Pago",
+      "Docker",
+    ],
+    githubUrl: "https://github.com/marcuslinhares/game-key-saas",
+    highlights: [
+      "Pagamentos reais Stripe + Mercado Pago integrados",
+      "Criptografia AES-256-GCM para armazenamento seguro de chaves",
+      "Sistema de escrow com disputas e webhooks",
+      "CI/CD com Docker + GitHub Actions deploy automático",
+    ],
+  },
+  {
     title: "Task Manager",
     description:
       "Aplicação full stack de gerenciamento de tarefas com autenticação JWT, CRUD completo, filtros por status/prioridade, e deploy containerizado.",
@@ -85,64 +105,61 @@ export const projects: Project[] = [
     ],
   },
   {
+    title: "Gama Project — B2B Marketplace",
+    description:
+      "Marketplace B2B para distribuidores em Russas/CE. Catálogo de produtos, gestão de pedidos, promoções, dashboard admin e autenticação via WhatsApp OTP.",
+    techs: ["Express", "TypeScript", "React", "PostgreSQL", "WhatsApp API"],
+    githubUrl: "https://github.com/marcuslinhares/gama_project",
+    highlights: [
+      "Autenticação por OTP via WhatsApp (Evolution API)",
+      "Painel admin completo com CRUD de produtos e pedidos",
+      "Sistema de promoções e descontos dinâmicos",
+      "Testes E2E com Playwright",
+    ],
+  },
+  {
     title: "Mercadinho Connect",
     description:
-      "Plataforma de ofertas para mercados com integração via WhatsApp. Catálogo de produtos, busca e notificações de promoções.",
-    techs: ["Next.js", "TypeScript", "Supabase", "Python", "WhatsApp API"],
+      "Plataforma de ofertas para mercados com catálogo de produtos, busca, sistema de destaque pago (boost) e integração com WhatsApp. Stripe + Mercado Pago.",
+    techs: [
+      "Next.js",
+      "TypeScript",
+      "Supabase",
+      "Stripe",
+      "Mercado Pago",
+    ],
     githubUrl: "https://github.com/marcuslinhares/mercadinho-connect",
     highlights: [
-      "Plataforma full stack com Next.js + Supabase",
+      "Sistema de boost pago com Stripe e Mercado Pago",
       "Catálogo de produtos com busca e filtros",
-      "Notificações de ofertas via WhatsApp",
-    ],
-  },
-  {
-    title: "BIA — Assistente Virtual Financeiro",
-    description:
-      "Assistente virtual com IA generativa para aconselhamento financeiro. Projeto final do Bootcamp Bradesco GenAI, Dados & Cyber (52h).",
-    techs: ["Python", "Jupyter", "LLM", "IA Generativa"],
-    githubUrl:
-      "https://github.com/marcuslinhares/assistente-financeiro-bradesco",
-    highlights: [
-      "Agente de IA para análise e aconselhamento financeiro",
-      "Integração com LLM para linguagem natural",
-      "Projeto vencedor do bootcamp Bradesco (52h)",
-    ],
-  },
-  {
-    title: "Antigravity Kit",
-    description:
-      "Toolkit para criação autônoma de agentes de IA. Pipeline completo de desenvolvimento que gera micro-SaaS e ferramentas inteligentes de forma automatizada.",
-    techs: ["Python", "TypeScript", "LLM", "AI Agents", "Automação"],
-    githubUrl: "https://github.com/marcuslinhares/antigravity-kit",
-    highlights: [
-      "Pipeline autônomo de desenvolvimento de agentes",
-      "Geração automatizada de micro-SaaS funcionais",
-      "Arquitetura modular extensível",
+      "Testes E2E com Playwright",
+      "CI/CD com Docker multi-stage",
     ],
   },
   {
     title: "AutoLegal MicroSaaS",
     description:
-      "Gerador automatizado de documentos legais para micro-SaaS, analisando stack tecnológica e gerando contratos personalizados com IA.",
-    techs: ["TypeScript", "Next.js", "LLM", "AI Agents"],
+      "Gerador automatizado de documentos legais para micro-SaaS, analisando stack tecnológica e gerando contratos personalizados com IA via API Groq.",
+    techs: ["TypeScript", "Next.js", "Groq LLM", "AI Agents"],
     githubUrl: "https://github.com/marcuslinhares/autolegal-microsaas",
     highlights: [
-      "Geração de documentos legais com IA",
+      "Geração de documentos legais com LLM real (Groq API)",
       "Análise automática de stack tecnológica",
-      "Interface moderna com Next.js",
+      "Fallback offline quando sem API key",
+      "CI/CD com Docker + GitHub Actions",
     ],
   },
   {
-    title: "IA Mentor de Carreira",
+    title: "Flyer API",
     description:
-      "Agente de IA para mentoria de carreira em tecnologia. Durante live, demonstrou a criação de um mentor virtual capaz de analisar perfis e sugerir planos de evolução.",
-    techs: ["Python", "Jupyter", "LLM", "AI Agents"],
-    githubUrl: "https://github.com/marcuslinhares/ia-mentor-carreira",
+      "API REST em Go para panfletos/flyers digitais. CRUD de flyers, estabelecimentos e categorias com upload de imagens e autenticação por API Key.",
+    techs: ["Go", "Chi", "SQLite", "Docker"],
+    githubUrl: "https://github.com/marcuslinhares/flyer",
     highlights: [
-      "Mentor virtual com análise de perfil tech",
-      "Geração de planos de carreira personalizados",
-      "Projeto demonstrado em live pública",
+      "API REST em Go com Chi Router",
+      "SQLite com auto-migrations e WAL mode",
+      "Upload de imagens e serve estático",
+      "Docker multi-stage com PocketBase incluso",
     ],
   },
 ];

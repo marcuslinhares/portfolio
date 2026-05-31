@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Marcus Linhares | Full Stack Developer",
+  title: "Marcus Linhares | Full Stack Engineer & Applied AI Engineer",
   description:
-    "Portfólio de Marcus Linhares — Desenvolvedor Full Stack especializado em Spring Boot, Nest.js, React, Angular e agentes de IA integrados à API do WhatsApp.",
+    "Portfólio de Marcus Linhares — Full Stack Engineer especializado em Spring Boot, Nest.js, React, Angular, Flutter e agentes de IA integrados à API do WhatsApp. Graduando em Ciência da Computação pela UFC.",
   keywords: [
     "Marcus Linhares",
     "Full Stack Developer",
@@ -32,9 +32,9 @@ export const metadata: Metadata = {
     "Ceará",
   ],
   openGraph: {
-    title: "Marcus Linhares | Full Stack Developer",
+    title: "Marcus Linhares | Full Stack Engineer & Applied AI Engineer",
     description:
-      "Desenvolvedor Full Stack especializado em Spring Boot, React e agentes de IA.",
+      "Full Stack Engineer especializado em Spring Boot, React, Angular e agentes de IA. Graduando em Ciência da Computação pela UFC.",
     type: "website",
     locale: "pt_BR",
   },
