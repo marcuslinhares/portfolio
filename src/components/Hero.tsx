@@ -2,6 +2,7 @@
 
 import { personalData } from "@/data";
 import { FiGithub, FiLinkedin, FiDownload, FiArrowDown } from "react-icons/fi";
+import Image from "next/image";
 
 export default function Hero() {
   return (
@@ -10,6 +11,19 @@ export default function Hero() {
       className="relative min-h-screen flex items-center justify-center hero-gradient"
     >
       <div className="max-w-3xl mx-auto px-6 text-center animate-fade-in">
+        {/* Profile Photo */}
+        <div className="mb-6 flex justify-center">
+          <div className="relative w-28 h-28 md:w-32 md:h-32 rounded-full overflow-hidden border-4 border-primary/20 shadow-lg">
+            <Image
+              src="/profile.jpg"
+              alt="Marcus Linhares"
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
+        </div>
+
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium mb-6">
           <span className="w-2 h-2 rounded-full bg-accent-green animate-pulse" />
           Disponível para oportunidades
@@ -40,6 +54,15 @@ export default function Hero() {
             className="px-6 py-3 rounded-lg border border-border text-muted hover:text-foreground hover:border-muted-foreground transition-all"
           >
             Entrar em Contato
+          </a>
+          <a
+            href={personalData.resumeUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-6 py-3 rounded-lg border border-accent-green/30 text-accent-green hover:bg-accent-green/10 hover:border-accent-green transition-all flex items-center gap-2"
+          >
+            <FiDownload size={16} />
+            Currículo
           </a>
         </div>
 
